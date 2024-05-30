@@ -65,4 +65,4 @@ python API_GLM.py
 python LLM_Robotics_GUI_Qianfan.py
 ```
 
-<div align=center><img src="images/新建入站规则1.png" ></div>
+<div align=center><img src="images/6.png" ></div>
