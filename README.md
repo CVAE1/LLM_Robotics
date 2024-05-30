@@ -25,11 +25,11 @@ pip install -r requirements.txt
 ```
 
 ### 5.关闭服务器本机防火墙
-<div align=center><img src="关闭防火墙.png" ></div>
+<div align=center><img src="images/关闭防火墙.png" ></div>
 
 ### 6.新建服务器本机入站规则
-<div align=center><img src="新建入站规则1.png" ></div>
-<div align=center><img src="新建入站规则2.png" ></div>
+<div align=center><img src="images/新建入站规则1.png" ></div>
+<div align=center><img src="images/新建入站规则2.png" ></div>
 
 ### 7.编写客户端访问程序
 ```python
@@ -38,7 +38,7 @@ url = 'http://127.0.0.1:8000'
 headers = {
     'Content-Type': 'application/json',
 }
-data = "{\"prompt\": \"请你用python写一段求10的阶乘的代码\", \"history\": []}"
+data = "{\"prompt\": \"此处写你的自然语言指令\", \"history\": []}"
 response = requests.post(url, headers=headers, data=data.encode('utf-8'))
 print(response)
 print(response.content.decode('utf-8'))
