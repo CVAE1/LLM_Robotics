@@ -59,3 +59,10 @@ python API_GLM.py
 <div align=center><img src="images/1.png"  width="20%"> <img src="images/2.png"  width="20%"> <img src="images/3.png"  width="20%"></div>
 <div align=center><img src="images/4.png"  width="30%"> <img src="images/5.png"  width="30%"></div>
 <div align=center></div>
+
+## 基于百度千帆大模型平台编写 GUI 界面，可视化生成的控制程序
+```shell
+python LLM_Robotics_GUI_Qianfan.py
+```
+
+<div align=center><img src="images/新建入站规则1.png" ></div>
