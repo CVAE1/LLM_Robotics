@@ -53,3 +53,9 @@ python api.py
 ```shell
 python API_GLM.py
 ```
+
+## ChatGLM 控制机械臂运动
+通过将大象机械臂的 API 接口说明以 Prompt 的形式传递给大模型，大模型利用这些接口以及自身的多级任务规划能力，完成抓取放置操作
+<div align=center><img src="images/1.png"  width="20%"> <img src="images/2.png"  width="20%"> <img src="images/3.png"  width="20%"></div>
+<div align=center><img src="images/4.png"  width="30%"> <img src="images/5.png"  width="30%"></div>
+<div align=center></div>
