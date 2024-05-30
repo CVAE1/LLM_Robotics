@@ -38,7 +38,7 @@ text1.pack()
 text1.place(x=50, y=100)
 
 # 应用API Key替换your_ak，Secret Key替换your_sk
-chat_comp = qianfan.ChatCompletion(ak="YFWPNvFRzaKjFBViiWG5DV3g", sk="QE9bkHR8EI5R2DaZy9uqdRPrbh2cSNfw")
+chat_comp = qianfan.ChatCompletion(ak=" ", sk=" ")
 # 获取prompt输入框的内容
 def genreate_code():
     prompt = text1.get("1.0","end")
@@ -111,40 +111,12 @@ btn3=tkinter.Button(win, bd=4, font=('微软雅黑',15), text="在真实环境�
 btn3.pack()
 btn3.place(x=800,y=520)
 
-
-
-### 播放视频
 app = tkinter.Frame(win, bg="white")
 app.pack()
 app.place(x=800,y=570)
 # Create a label in the frame
 lmian = tkinter.Label(app)
 lmian.pack()
-
-# Capture from camera
-cap = cv2.VideoCapture('test.mp4')
-
-# function for video streaming
-def video_stream():
-    _, frame = cap.read()
-    cv2image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-    img = Image.fromarray(cv2image)
-    img = img.resize((704, 396), Image.LANCZOS)
-    imgtk = ImageTk.PhotoImage(image=img)
-    lmian.imgtk = imgtk
-    lmian.configure(image=imgtk)
-    lmian.after(1, video_stream)
-
-video_stream()
-
-
-#显示作者信息
-# label_name = tkinter.Label(win, text='姓名：李绍焜', font=('微软雅黑',20), justify=tkinter.LEFT)
-# label_name.place(x=100,y=620)
-# label_ID = tkinter.Label(win, text='学号：3120221325', font=('微软雅黑',20), justify=tkinter.LEFT)
-# label_ID.place(x=100,y=660)
-# label_School = tkinter.Label(win, text='学院：集成电路与电子学院', font=('微软雅黑',20), justify=tkinter.LEFT)
-# label_School.place(x=100,y=700)
 
 #设置退出按钮
 button0 = tkinter.Button(win, bd=4, font=('微软雅黑',30), text="Exit", command=win.quit)
